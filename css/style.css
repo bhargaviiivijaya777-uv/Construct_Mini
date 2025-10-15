@@ -52,4 +52,56 @@
   /* admin tables small */
   .admin-table{width:100%;border-collapse:collapse}
   .admin-table td, .admin-table th{border:1px solid #ddd;padding:8px;text-align:left}
-  
+  /* WhatsApp Styles */
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn-small {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.whatsapp-badge {
+    background: #25D366;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.whatsapp-available {
+    color: #25D366;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.supplier-contact {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    border-left: 4px solid #25D366;
+}
