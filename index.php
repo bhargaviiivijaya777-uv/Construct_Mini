@@ -1,4 +1,10 @@
 <?php
+session_start();
+if(!isset($_SESSION['user_id'])) {
+    header("Location: landing.php");
+    exit();
+}
+
 include('db_connect.php');
 
 // Featured pick by name (your DB has 'Premium Bricks' & 'OPC Cement')
@@ -851,8 +857,8 @@ $categories = ['Bricks','Cement','Steel','Tiles','Electrical','Plumbing'];
       <a href="products.php"><i class="fas fa-box"></i> Products</a>
       <a href="suppliers.php"><i class="fas fa-users"></i> Suppliers</a>
       <a href="about.php"><i class="fas fa-info-circle"></i> About</a>
-      <a href="login.php"><i class="fas fa-sign-in-alt"></i> Login</a>
-      <a href="register.php"><i class="fas fa-user-plus"></i> REGISTER</a>
+      <a href="feedback.php"><i class="fas fa-comments"></i> Feedback</a>
+      <a href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
     </nav>
   </header>
 
